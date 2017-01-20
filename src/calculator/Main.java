@@ -17,6 +17,15 @@ public class Main {
 			System.out.println("Enter Width: ");
 			double width = Double.parseDouble(sc.nextLine());
 			
+			//create an instance of the Rectangle object
+			Rectangle rectangle = new Rectangle(width, length);
+			
+			String message = 
+					"Perimeter: " + rectangle.perimeterFormatted() + "\n" +
+					"Area: " + rectangle.areaFormatted() + "\n";
+			
+			System.out.println(message);
+			
 			System.out.println("Continue? y/n");
 			choice = sc.nextLine();
 			System.out.println();
